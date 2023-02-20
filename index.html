@@ -21,45 +21,42 @@
 
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/cb5469bf64.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alike&family=Open+Sans&display=swap" rel="stylesheet">
 </head>
+<body>
   <header>
-    <h1>Elizabeth Roberts</h1>
-    <h3>Software engineer / Web developer / Front End Developer</h3>
-  </header>
-  <nav>
-    <a href="#about">About</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#contact">Contact</a>
-  </nav>
-  <div>
-    <h3 id="about">About</h3>
-    <img src="./img/ER.jpg"/>
-    <h4>Elizabeth Roberts</h4>
-    <h5>Software engineer / Web developer / Front End Developer</h5>
-    <p>I'm a software engineer who likes building highly functional digital products.
-      After a decade of working online as a coach and coming across websites that just aren't all they can be, I started thinking to myself: "I can improve this!"-and so here I am, ready to make the digital world a better place.
-      I speak 2.5 languages, I've been to 15 countries, and when I was little I wanted to be an Egyptologist-but I've settled for cat worshipping on my own time.  </p>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" id="contact-me">Contact me</a>
+    </nav>
+    <div>
+      <h1>Elizabeth Roberts</h1>
+      <h2 class="job-title">web developer</h2>
+    </div>
+    </header>
+  <div class="about-section">
+    <h2 id="about">About</h2>
+    <img src="./img/ER.jpg" alt="image of yours truly, Elizabeth Roberts, smiling at the camera, against a white background">
+    <div class="about-text">
+      <p>I'm a front end web developer who likes building highly functional digital products.</p>
+      <p>After spending half my life online I started thinking to myself: "I can improve this!"-and so here I am, making the digital world a better place, one line of code at a time.</p>
+      <p>I am fluent in English & Spanish, and I can navigate everyday life in German (I can also tell if someone's being explicitly rude to me in Macedonian). I've been to 15 countries and worked in the Americas, Europe and Asia. When I was little I wanted to be an Egyptologist-but I've settled for cat worshipping on my own time, instead.  </p>
+    </div>
   </div>
-  <div>
-    <h3 id="skills">Skills</h3>
+  <div class="skills-and-tools">
+    <h2 id="skills">Skills</h2>
     <ul>
       <li>JSX</li>
       <li>ES6</li>
-      <!-- <li>Managing data flow</li> -->
       <li>Vanilla JavaScript</li>
-      <!-- <li>DOM manipulation</li> -->
       <li>APIS</li>
-      <!-- <li>Responsive typography</li>
-      <li>Media queries</li>
-      <li>FlexBox</li>
-      <li>Version control</li> -->
       <li>GIT</li>
-      <!-- <li>GitHub</li>
-      <li>CSS3</li>
-      <li>HTML5</li> -->
     </ul>
-    <h3>Tools</h3>
+    <h2>Tools</h2>
     <ul>
       <li>Text editors</li>
       <li>Chrome DevTools</li>
@@ -68,12 +65,12 @@
       <li>Photoshop</li>
     </ul>
   </div>
-  <div>
-    <h3 id="projects">Projects</h3>
+  <div class="projects-section">
+    <h2 id="projects">Projects</h2>
     <div>
-      <h5>Sticky notes</h5>
+      <h3 class="project-title">Sticky notes</h3>
       <p>An interactive app that will let users create “sticky notes” on their computer to keep track of to-do items.</p>
-      <h6>Languages, skills and tools used</h6>
+      <h5>Languages, skills and tools: </h5>
       <ul>
         <li>ES6</li>
         <li>JSX</li>
@@ -83,10 +80,11 @@
       </ul>
       <p><a href="https://332qc2.csb.app/" target="_blank"><img src="./img/StickyNotesUI.png" alt="Screenshot of Sticky Notes App on mobile view"></a></p>
     </div>
-    <h5>Rock, paper, scissors</h5>
+    <div>
+      <h3 class="project-title">Rock, paper, scissors</h3>
       <p>A rock, paper, scissors game where the user plays against the computer and decides the fate of humanity in the face of the machine uprising.
       </p>
-      <h6>Languages, skills and tools used</h6>
+      <h5>Languages, skills and tools: </h5>
       <ul>
         <li>JavaScript</li>
         <li>DOM manipulation</li>
@@ -95,11 +93,11 @@
         <li>VSCode</li>
       </ul>
       <p><a href="https://er1927.github.io/Rock-paper-scissors/" target="_blank"><img src="./img/RPS.png" alt="Screenshot of Rock, paper, scissors game on mobile view."></a></p>
-      
     </div>
-    <h5>Name tag generator</h5>
+    <div>
+      <h3 class="project-title">Name tag generator</h3>
       <p>A name tag generator to create bulk name tags using functional components and ES6 modules</p>
-      <h6>Languages, skills and tools used</h6>
+      <h5>Languages, skills and tools: </h5>
       <ul>
         <li>ES6</li>
         <li>JSX</li>
@@ -107,20 +105,18 @@
         <li>CodeSandBox</li>
       </ul>
       <p><a href="https://6ivipl.csb.app/" target="_blank"><img src="./img/NametagGenerator.png" alt="Screenshot of name tag generator on mobile view."></a></p>
-      
-    </div>
-    
+    </div>  
   </div>
-  <div>
-    <h3 id="contact">Contact</h3>
-    <ul>
-      <li>Elizabeth Roberts</li>
-      <li><i class="fa-solid fa-envelope"></i>elizabeth.roberts1927@gmail.com</li>
-      <li><a a ref="https://www.linkedin.com/in/elizabeth-roberts-94743b249/"><i class="fa-brands fa-linkedin"></i></a></li>
-      <li><a ref="https://github.com/er1927"><i class="fa-brands fa-github"></i></a></li>
-    </ul>
+  <div class="contact-section">
+    <h2 id="contact">Contact me</h2>
+    <p>elizabeth.roberts1927@gmail.com</p>
+    <a href="https://www.linkedin.com/in/elizabeth-roberts-94743b249/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+    <a href="https://github.com/er1927" target="_blank"><i class="fa-brands fa-github"></i></a>
   </div>
-<body>
+  <footer>
+    <p>&#169; Elizabeth Roberts <script>document.write( new Date().getFullYear() );</script></p>  
+</footer>
+
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>

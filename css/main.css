@@ -10,10 +10,13 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
+/* * {
+  outline: dotted 1px yellow;
+} */
 
 html {
   color: #222;
-  font-size: 1em;
+  font-size: 16px;
   line-height: 1.4;
 }
 
@@ -86,6 +89,147 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+body {
+  background-color: #453e4f;
+  color: #FFE8D6;
+  font-family: "Open sans", cursive;
+  margin: 1em;
+}
+
+header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+nav {
+  margin: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  text-transform: uppercase;
+}
+a:link, a:visited {
+  text-decoration: none;
+  color:#f19494;
+}
+
+a:hover {
+  color: #F8C6C6;
+}
+
+#contact-me {
+  color:#453e4f;
+  background-color: #f19494;
+  border: solid 6px #f19494;
+  border-radius: 5px;
+}
+#contact-me:hover {
+  color: #F8C6C6;
+}
+
+h1 {
+  padding-top:30px;
+  margin-bottom: 0;
+  text-transform: capitalize;
+}
+
+h1:hover {
+  color:#E9B14C;
+}
+
+.job-title:hover {
+  color:#E9B14C;
+}
+
+
+.job-title {
+  margin-top: 0;
+  font-variant: small-caps;
+  text-transform: lowercase;
+  font-size: 1.5em;
+}
+h1, h2, h3, h5 {
+  font-family: "Alike";
+  letter-spacing: .1em;
+
+}
+h2, h3 {
+  text-transform: uppercase;
+}
+
+div {
+  margin-top:30px;
+  margin-bottom:40px;
+}
+
+.about-section img {
+  border-radius: 50%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.about-text p {
+  margin: 0 1em;
+  padding:0;
+}
+
+.about-section, .skills-and-tools, .projects-section {
+  box-sizing: border-box;
+  margin: -15px;
+  padding:1em;
+}
+.about-section {
+background-color: #FFE8D6;
+  color:#453e4f;
+}
+
+.skills-and-tools ul {
+  list-style-type: "✔";
+}
+
+.skills-and-tools ul li {
+  padding-left: .5em;
+}
+
+.projects-section {
+  background-color: #f19494;
+  color:#453e4f;
+}
+
+.project-title {
+  text-align: center;
+}
+
+img {
+  width:75%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  border-radius: 10px;
+}
+
+.contact-section {
+  text-align: center;
+}
+#contact {
+  margin-bottom: 2em;
+}
+
+.contact-section p:hover {
+  color:#E9B14C;
+}
+
+i {
+  font-size: 2em;
+  padding:1em;
+}
+
+footer {
+  text-align: center;
+  font-size: .75em;
+}
 
 /* ==========================================================================
    Helper classes
@@ -175,9 +319,22 @@ textarea {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+@media only screen and (max-width: 600px) {
+
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {...} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {...} */
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {...} */
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {...} */
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
