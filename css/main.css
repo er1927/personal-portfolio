@@ -10,9 +10,6 @@
 /* ==========================================================================
    Base styles: opinionated defaults
    ========================================================================== */
-/* * {
-  outline: dotted 1px yellow;
-} */
 
 html {
   color: #222;
@@ -129,6 +126,7 @@ nav {
   align-items: center;
   text-transform: uppercase;
 }
+
 a:link, a:visited {
   text-decoration: none;
   color:#f19494;
@@ -144,6 +142,7 @@ a:hover {
   border: solid 6px #f19494;
   border-radius: 5px;
 }
+
 #contact-me:hover {
   color: #F8C6C6;
 }
@@ -162,21 +161,20 @@ h1:hover {
   color:#E9B14C;
 }
 
-
 .job-title {
   margin-top: 0;
   font-variant: small-caps;
   text-transform: lowercase;
   font-size: 1.5em;
 }
+
 h1, h2, h3, h5 {
   font-family: "Alike";
   letter-spacing: .1em;
-
 }
 
-.sub-header, li {
-  text-align: left;
+.project-item li, .skills-and-tools li {
+  text-align: center;
 }
 
 h2, h3 {
@@ -193,40 +191,49 @@ div {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 50%;
+  padding:2em;
 }
 
-.about-text p {
+.about-item p {
   margin: 0 1em;
   padding:0;
 }
 
-.about-section, .skills-and-tools, .projects-section {
+.about-main, .skills-and-tools, .projects-section {
   box-sizing: border-box;
   margin: -15px;
   padding:1em;
 }
 
-.about-section, .skills-and-tools {
+.projects-section, .skills-and-tools {
 background-color: #FFE8D6;
 color:#453e4f;
 }
 
+.skills-and-tools ul, 
+.projects-section ul {
+  list-style-type: none;
+}
+
 .skills-and-tools ul {
-  list-style-type: "✔";
+  padding: 3em;
 }
 
 .skills-and-tools ul li {
-  padding-left: .5em;
+  border: solid 1px #6a607a;
+  background-color: #6a607a;
+  color:#FFE8D6;
+  border-radius: 10px;
+  margin: .5em 0;
 }
 
-.projects-section {
+.skills-and-tools ul li:hover {
+  font-weight: bold;
+}
+
+.about-main {
   background-color: #f19494;
   color:#453e4f;
-}
-
-.projects-section ul {
-  list-style-type: "➸";
 }
 
 projects-section ul li {
@@ -243,6 +250,7 @@ img {
 
 #contact {
   margin-bottom: 2em;
+  color:#E9B14C;
 }
 
 .contact-section p:hover {
@@ -251,7 +259,7 @@ img {
 
 i {
   font-size: 2em;
-  padding:.5em 2em;
+  padding:.5em .75em;
 }
 
 footer {
@@ -345,13 +353,25 @@ footer {
    These examples override the primary ('mobile first') styles.
    Modify as content requires.
    ========================================================================== */
+   @media only screen and (min-width: 600px) {
 
-/* MOBILE STYLES */
-
-@media only screen and (max-width: 600px) {
-
-}
-
+    .about-section {
+      display: flex;
+      flex-flow: row wrap;
+      justify-content: center;
+      align-items: center;
+    }
+    .about-section {
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
+    }
+    
+    .about-item {
+      width:40%;
+    }
+  
+   }
 
  @media only screen and (min-width: 768px) {
 
@@ -383,15 +403,13 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    width: 66%;
+    align-self: center;
   }
 
   .skills-and-tools ul li {
     width: 30%;
     padding:1em;
-  }
-
-  .skills-and-tools ul li:hover {
-    font-weight: bold;
   }
 
   .contact-section {
@@ -407,16 +425,29 @@ footer {
   .contact-section h3 {
     color:#E9B14C;
   }
+
   .contact-section div {
     width:50%;
   }
-
-
-
  }
  
 @media only screen and (min-width: 1200px) {
+nav {
+  justify-content: right;
+}
 
+nav a {
+  padding:0 3em;
+}
+
+.project-item {
+  width:25%;
+}
+
+.skills-and-tools ul {
+  width: 66%;
+  align-self: center;
+}
 }
 
 @media print,

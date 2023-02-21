@@ -38,16 +38,7 @@
       <h2 class="job-title">web developer</h2>
     </div>
     </header>
-  <div class="about-section">
-    <h2 class="sub-header" id="about">About</h2>
-    <img src="./img/ER.jpg" alt="image of yours truly, Elizabeth Roberts, smiling at the camera, against a white background">
-    <div class="about-text">
-      <p>I'm a front end web developer who likes building highly functional digital products.</p>
-      <p>After spending half my life online I started thinking to myself: "I can improve this!"-and so here I am, making the digital world a better place, one line of code at a time.</p>
-      <p>I am fluent in English & Spanish, and I can navigate everyday life in German (I can also tell if someone's being explicitly rude to me in Macedonian). I've been to 15 countries and worked in the Americas, Europe and Asia. When I was little I wanted to be an Egyptologist-but I've settled for cat worshipping on my own time, instead.  </p>
-    </div>
-  </div>
-  <div class="projects-section">
+   <div class="projects-section">
     <h2 class="sub-header" id="projects">Projects</h2>
     <div class="project-item">
       <h3 class="project-title">Sticky notes</h3>
@@ -89,8 +80,22 @@
       </ul>
     </div>  
   </div>
+  <div class="about-main">
+    <h2 class="sub-header" id="about">About</h2>
+    <div class="about-section">
+        <div class="about-item">
+          <p>I'm a front end web developer who likes building highly functional digital products.</p>
+          <p>After spending half my life online I started thinking to myself: "I can improve this!"-and so here I am, making the digital world a better place, one line of code at a time.</p>
+          <p>I am fluent in English & Spanish, and I can navigate everyday life in German (I can also tell if someone's being explicitly rude to me in Macedonian). I've been to 15 countries and worked in the Americas, Europe and Asia. When I was little I wanted to be an Egyptologist-but I've settled for cat worshipping on my own time, instead.  </p>
+        </div>
+        <div class="about-item">
+        <img src="./img/ER.jpg" alt="image of yours truly, Elizabeth Roberts, smiling at the camera, against a white background">
+      </div>
+      </div>
+    </div>
   <div class="skills-and-tools">
-    <h2 class="sub-header" id="skills">Developer skills</h2>
+    <h2 class="sub-header">skills</h2>
+    <h2 class="sub-header" id="skills">Development</h2>
     <ul>
       <li>JSX</li>
       <li>ES6</li>
@@ -123,7 +128,7 @@
   <footer>
     <p>&#169; Elizabeth Roberts <script>document.write( new Date().getFullYear() );</script></p>  
 </footer>
-<button onclick="topFunction()" id="myBtn" title="Go to top">↑</button>
+<button onclick="topFunction()" id="myBtn" title="Back to top">↑</button>
 
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
@@ -134,10 +139,9 @@
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
 
-    // Get the button:
+// BACK-TO-TOP-BUTTON
 let mybutton = document.getElementById("myBtn");
 
-// When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
@@ -148,12 +152,10 @@ function scrollFunction() {
   }
 }
 
-// When the user clicks on the button, scroll to the top of the document
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
 }
-
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
