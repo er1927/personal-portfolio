@@ -6,19 +6,14 @@
   <title>Elizabeth Roberts - Portfolio</title>
   <meta name="description" content="">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <meta property="og:title" content="">
   <meta property="og:type" content="">
   <meta property="og:url" content="">
   <meta property="og:image" content="">
-
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
-  <!-- Place favicon.ico in the root directory -->
-
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
-
   <meta name="theme-color" content="#fafafa">
   <script src="https://kit.fontawesome.com/cb5469bf64.js" crossorigin="anonymous"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -38,7 +33,7 @@
       <h2 class="job-title">web developer</h2>
     </div>
     </header>
-   <div class="projects-section">
+  <div class="projects-section">
     <h2 class="sub-header" id="projects">Projects</h2>
     <div class="project-item">
       <h3 class="project-title">Sticky notes</h3>
@@ -52,7 +47,7 @@
         <li>Data flow management</li>
         <li>CodeSandBox</li>
       </ul>
-      </div>
+    </div>
     <div class="project-item">
       <h3 class="project-title">Rock, paper, scissors</h3>
       <p><a href="https://er1927.github.io/Rock-paper-scissors/" target="_blank"><img src="./img/RPS.png" alt="Screenshot of Rock, paper, scissors game on mobile view."></a></p>
@@ -70,7 +65,7 @@
     <div class="project-item">
       <h3 class="project-title">Name tag generator</h3>
       <p><a href="https://6ivipl.csb.app/" target="_blank"><img src="./img/NametagGenerator.png" alt="Screenshot of name tag generator on mobile view."></a></p>
-      <p>A name tag generator to create bulk name tags using functional components and ES6 modules</p>
+      <p>A name tag generator to create bulk name tags using functional components and ES6 modules.</p>
       <h5>Languages, skills and tools: </h5>
       <ul>
         <li>ES6</li>
@@ -86,26 +81,30 @@
         <div class="about-item">
           <p>I'm a front end web developer who likes building highly functional digital products.</p>
           <p>After spending half my life online I started thinking to myself: "I can improve this!"-and so here I am, making the digital world a better place, one line of code at a time.</p>
-          <p>I am fluent in English & Spanish, and I can navigate everyday life in German (I can also tell if someone's being explicitly rude to me in Macedonian). I've been to 15 countries and worked in the Americas, Europe and Asia. When I was little I wanted to be an Egyptologist-but I've settled for cat worshipping on my own time, instead.  </p>
+          <p>I am fluent in English & Spanish, and I can navigate everyday life in German. I've been to 15 countries and worked in the Americas, Europe and Asia. When I was little I wanted to be an Egyptologist-but I've settled for being a cat mom, instead.  </p>
         </div>
         <div class="about-item">
         <img src="./img/ER.jpg" alt="image of yours truly, Elizabeth Roberts, smiling at the camera, against a white background">
       </div>
-      </div>
     </div>
+  </div>
   <div class="skills-and-tools">
     <h2 class="sub-header">skills</h2>
     <h2 class="sub-header" id="skills">Development</h2>
     <ul>
       <li>JSX</li>
       <li>ES6</li>
+      <li>React</li>
       <li>Vanilla JavaScript</li>
       <li>APIS</li>
       <li>GIT</li>
+      <li>HTML5</li>
+      <li>CSS3</li>
     </ul>
     <h2 class="sub-header" >Tech stack</h2>
     <ul>
       <li>Text editors</li>
+      <li>Node.js</li>
       <li>Chrome DevTools</li>
       <li>React DevTools</li>
       <li>GitHub</li>
@@ -115,47 +114,39 @@
   <div class="contact-section">
     <h2 class="sub-header" id="contact">Let's connect</h2>
     <div>
-    <h3>Hire me</h3>
-    <p>elizabeth.roberts1927@gmail.com</p>
-    <p>+54 2944 725577</p>
-  </div>
-  <div>
-    <h3>Follow me</h3>
-    <a href="https://www.linkedin.com/in/elizabeth-roberts-94743b249/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
-    <a href="https://github.com/er1927" target="_blank"><i class="fa-brands fa-github"></i></a>
-  </div>
+      <h3>Hire me</h3>
+      <p>elizabeth.roberts1927@gmail.com</p>
+      <p>+54 2944 725577</p>
+    </div>
+    <div>
+      <h3>Follow me</h3>
+      <a href="https://www.linkedin.com/in/elizabeth-roberts-94743b249/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://github.com/er1927" target="_blank"><i class="fa-brands fa-github"></i></a>
+    </div>
   </div>
   <footer>
     <p>&#169; Elizabeth Roberts <script>document.write( new Date().getFullYear() );</script></p>  
-</footer>
-<button onclick="topFunction()" id="myBtn" title="Back to top">↑</button>
-
+  </footer>
+  <button onclick="topFunction()" id="myBtn" title="Back to top">↑</button>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-
-  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
     ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
-
-// BACK-TO-TOP-BUTTON
-let mybutton = document.getElementById("myBtn");
-
-window.onscroll = function() {scrollFunction()};
-
-function scrollFunction() {
-  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-    mybutton.style.display = "block";
-  } else {
-    mybutton.style.display = "none";
-  }
-}
-
-function topFunction() {
-  document.body.scrollTop = 0;
-  document.documentElement.scrollTop = 0;
-}
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+      mybutton.style.display = "none";
+      }
+      }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
   <script src="https://www.google-analytics.com/analytics.js" async></script>
 </body>
