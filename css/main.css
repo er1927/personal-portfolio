@@ -4,10 +4,6 @@ html {
   line-height: 1.4;
 }
 
-* {
-  outline: dotted 1px black;
-}
-
 ::-moz-selection {
   background: #b3d4fc;
   text-shadow: none;
