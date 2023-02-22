@@ -64,11 +64,12 @@ body {
   padding: 15px; 
   border-radius: 50%; 
   font-size: 2em; 
+  background-color: #6a607a;
+  color:white;
 }
 
 #myBtn:hover {
-  background-color: #6a607a;
-  color:white;
+  background-color: #27222e;
 }
 
 header {
