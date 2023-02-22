@@ -154,8 +154,12 @@ div {
   padding:2em;
 }
 
+.about-item h4 {
+  margin: 1em 0 2em 0; 
+}
+
 .about-item p {
-  margin: 0 1em;
+  margin: 1em;
   padding:0;
 }
 
@@ -211,6 +215,14 @@ img {
 #contact {
   margin-bottom: 2em;
   color:#E9B14C;
+}
+
+.contact-section h4 {
+  color: #E9B14C;
+}
+
+.contact-section h4:hover {
+  color:#F8D697;
 }
 
 .contact-section p:hover {
