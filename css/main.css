@@ -139,11 +139,18 @@ h1, h2, h3, h5 {
   letter-spacing: .1em;
 }
 
-.project-item ul {
-  padding-left:0;
+.project-item h4 {
+  font-variant: small-caps;
+  text-transform: uppercase;
 }
 
-.project-item li, .skills-and-tools li {
+.project-item li {
+  text-align: left;
+  list-style-type: "✓";
+  padding-left:1em;
+}
+
+.skills-and-tools li {
   text-align: center;
 }
 
@@ -166,7 +173,7 @@ h2, h3 {
 
 div {
   margin-top:30px;
-  margin-bottom:40px;
+  margin-bottom:80px;
 }
 
 .about-section img {
