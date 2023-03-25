@@ -195,7 +195,7 @@ div {
 }
 
 .about-item p {
-  margin: 2.5em;
+  /* margin: 2.5em; */
   padding:0;
   text-align: left;
 }
